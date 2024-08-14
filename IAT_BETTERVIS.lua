@@ -1,0 +1,16 @@
+local n = game.Lighting
+n.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+n.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+n.EnvironmentDiffuseScale = 1
+n.EnvironmentSpecularScale = 1
+n.ExposureCompensation = 0
+n.GlobalShadows = false
+n.Outlines = false
+n.ShadowSoftness = 1
+local bloom = Instance.new("BloomEffect", n)
+bloom.Intensity = 1
+bloom.Size = 50
+bloom.Threshold = 4
+local a = Instance.new("Atmosphere", n)
+a.Density = 0.1
+a.Offset = 1
